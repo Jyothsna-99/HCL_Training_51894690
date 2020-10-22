@@ -1,4 +1,4 @@
-package lab_assignment_day2_training.Q5;
+package lab_assignment_day2_training;
 
 public class SportCar extends Car {
 	public SportCar(int noOfWheel, int noOfPassenger, int model, String make, int noOfDoor) {
