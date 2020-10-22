@@ -1,4 +1,4 @@
-package lab_assignment_day2_training.Q5;
+package lab_assignment_day2_training;
 
 import java.util.Scanner;
 
