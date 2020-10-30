@@ -11,20 +11,27 @@ public class Test1 {
 	public static void main(String[] args) {
 		FileInputStream f = null;
 		try {
-			 f = new FileInputStream("example.txt");
-			int line = 0;
-			
-			while((line = f.read()) != -1) {
-				System.out.print((char)line);
-			}
-		} catch (FileNotFoundException e) {
+		      f = new FileInputStream("example.txt");
+		      int line = 0;
+		      while((line = f.read()) != -1) 
+		      {
+		       System.out.print((char)line);
+		       }
+		} 
+		catch (FileNotFoundException e) 
+		{
 			e.printStackTrace();
-		} catch (IOException e) {
+		}
+		catch (IOException e)
+		{
+			
 			e.printStackTrace();
 		}
 		try {
 			f.close();
-		} catch (IOException e) {
+		}
+		catch (IOException e)
+		{
 			e.printStackTrace();
 		}
 	}
