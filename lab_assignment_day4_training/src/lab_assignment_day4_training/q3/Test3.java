@@ -5,7 +5,6 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-
 public class Test3 {
 	public static void main(String[] args) {
 		try {
@@ -14,23 +13,31 @@ public class Test3 {
 			o1.writeObject(e1);
 			e1.display();
 			System.out.println("serialized");
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
+		} 
+		catch (FileNotFoundException e) 
+		{
 			e.printStackTrace();
 		}
-		
-		
+		catch (IOException e)
+		{
+			e.printStackTrace();
+		}	
 		try {
 			ObjectInputStream o2 = new ObjectInputStream(new FileInputStream("test3.ser"));
 			Employee e2 = (Employee) o2.readObject();
 			e2.display();
 			System.out.println("deserialized");
-		} catch (FileNotFoundException e) {
+		}
+		catch (FileNotFoundException e)
+		{
 			e.printStackTrace();
-		} catch (IOException e) {
+		} 
+		catch (IOException e) 
+		{
 			e.printStackTrace();
-		} catch (ClassNotFoundException e) {
+		}
+		catch (ClassNotFoundException e)
+		{
 			e.printStackTrace();
 		}
 	}
