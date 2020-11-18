@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Welcome to Book Entry Form</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='BookForm.css'>
+    <script src='main.js'></script>
+</head>
+<body >
+    <header align="center" >
+        <p>
+            <h3 ><strong>please fill the required Details</strong></h3>  
+        </p>
+    </header>
+    <form name="bookForm" id="bookId" action="#" method="POST"  >
+        <table align="center">
+            <tr>
+                <td>
+                    <label>
+                        Enter ISBN:
+                     </label>
+                </td>
+               
+                <td>
+                   <input type="text" name="isbn" id="isbnId"/> 
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>
+                        Enter Title:
+                     </label>
+                </td>
+                <td>
+                    <input type="text" name="title" id="titleId"/> 
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>
+                        Enter Price:
+                    </label>
+                </td>
+                <td>
+                    <input type="number" name="price" id="priceId"/> 
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>
+                        Enter the published Date:
+                     </label>
+                </td>
+               
+                <td>
+                    <input type="date" name="date" id="dateId"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>
+                        Enter The book type:
+                     </label>
+                </td>
+                <td>
+                    <input type="text" name="type" id="typeId"/> 
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>
+                        Enter No. of copies:
+                     </label>
+                </td>
+               
+                <td>
+                    <input type="number" name="No.ofCopies" id="No.ofCopiesId"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>
+                        Enter Name of the publisher:
+                     </label>
+                </td>
+               
+                <td>
+                    <input type="text" name="publisher" id="publisherId"/> 
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>
+                        Enter address of the publisher:
+                     </label>
+                </td>
+               
+                <td>
+                    <textarea id="AddressPublisherId" name="addressPublisher" rows="5" cols="20"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>
+                        Enter Name of the Author:
+                     </label>
+                </td>
+               
+                <td>
+                    <input type="text" name="Author" id="AuthorId"/> 
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>
+                        Enter address of the Author:
+                     </label>
+                </td>
+                
+                <td>
+                    <textarea id="addressAuthorId" name="addressAuthor" rows="5" cols="20"></textarea>
+                </td>
+            </tr>
+            <tr >
+                <td> 
+                    <input type="reset" value="clear the from" class="resetButton" name="reset" id="resetId"><br>
+                    <input id="submitId" name="submit" type="submit" value="Submit the form">
+                    
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
